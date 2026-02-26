@@ -6,21 +6,51 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "worker:dev": "tsx index.ts",
+    "seed:all": "tsx seeds/seed-all.ts",
+    "seed:regulator": "tsx seeds/seed-regulator.ts"
   },
   "dependencies": {
+    "@google-cloud/documentai": "^9.5.0",
+    "@google-cloud/storage": "^7.19.0",
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.98.0",
+    "axios": "^1.13.5",
+    "bullmq": "^5.70.1",
+    "cheerio": "^1.2.0",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.3.1",
+    "ioredis": "^5.9.3",
+    "mammoth": "^1.11.0",
+    "natural": "^8.1.0",
     "next": "16.1.6",
+    "p-limit": "^7.3.0",
+    "p-queue": "^9.1.0",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.4.624",
+    "playwright": "^1.58.2",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "robots-parser": "^3.0.1",
+    "tough-cookie": "^6.0.0",
+    "turndown": "^7.2.2",
+    "uuid": "^13.0.0",
+    "winston": "^3.19.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/turndown": "^5.0.6",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
